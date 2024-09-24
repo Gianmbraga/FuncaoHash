@@ -1,5 +1,11 @@
 # FuncaoHash
 
+## Integrantes
+* Aline Stolai - 22.121.003-2
+* Gianpietro Malheiros Braga - 22.121.054-5
+* João Lucas Freitas de Almeida Rocha - 22.121.004-0
+* Lucca Kirsten da Costa - 22.121.121-2
+
 ## Resultado obtido pelo programa em Python:
 
 | TEXTO                                                                                    | SHA256 - OBTIDDO NO EXERCÍCIO                                    | SHA256 - OBTIDDO NO EXERCÍCIO    | SHA256 - RESULTADO | MD5 - RESULTADO |
