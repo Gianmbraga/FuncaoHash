@@ -56,8 +56,8 @@ for i in range(0, len(verifyText), 2):
     computeSHA256 = hashlib.sha256(texto.encode('utf-8')).hexdigest()
     computeMD5 = hashlib.md5(texto.encode('utf-8')).hexdigest()
     
-    validSHA256 = "OK" if computeSHA256 == gethashSHA256 else "SKILL ISSUE"
-    validMD5 = "OK" if computeMD5 == gethashMD5 else "SKILL ISSUE"
+    validSHA256 = "OK" if computeSHA256 == gethashSHA256 else "INVALIDO"
+    validMD5 = "OK" if computeMD5 == gethashMD5 else "INVALIDO"
     
     resizeTexto = texto[:int(len(texto)/3)] + "..."
 
