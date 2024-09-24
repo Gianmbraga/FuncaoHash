@@ -56,11 +56,11 @@ for i in range(0, len(verifyText), 2):
     computeSHA256 = hashlib.sha256(texto.encode('utf-8')).hexdigest()
     computeMD5 = hashlib.md5(texto.encode('utf-8')).hexdigest()
     
-    validSHA256 = "OK" if computeSHA256 == gethashSHA256 else "INVALIDO"
-    validMD5 = "OK" if computeMD5 == gethashMD5 else "INVALIDO"
+    validSHA256 = "VALIDO" if computeSHA256 == gethashSHA256 else "INVALIDO"
+    validMD5 = "VALIDO" if computeMD5 == gethashMD5 else "INVALIDO"
     
     resizeTexto = texto[:int(len(texto)/3)] + "..."
 
-    if i > 20:
+    if i >= 20:
         resizeTexto = texto
     print("[SHA256 = {}] | [MD5 = {}] ==> \"{}\"".format(validSHA256, validMD5, resizeTexto))
